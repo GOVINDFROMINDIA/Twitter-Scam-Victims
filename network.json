@@ -23,109 +23,86 @@
     "2": {
         "Tweets": [
             "Working on a new project.",
-            "Coffee is my best friend."
+            "Coffee is my best friend.",
+            "Nature hike this weekend!",
+            "Enjoying a relaxing evening by the fire.",
+            "Excited to start a new book this weekend.",
+            "Congratulations, you've been selected for a free luxury vacation! Simply share your credit card details.",
+            "Get rich quick! Invest in our revolutionary scheme and become a millionaire overnight."
         ],
-        "Connections": [
-            1,
-            3,
-            8,
-            11,
-            12,
-            26,
-            50
-        ]
+        "Connections": [1, 3, 8, 11, 12, 26, 50]
     },
     "3": {
         "Tweets": [
             "Traveling to a new city!",
-            "Love the weekend vibes."
+            "Love the weekend vibes.",
+            "Trying out the local cuisine in a new place.",
+            "Exploring historical sites on my trip.",
+            "Taking a leisurely stroll through the city streets.",
+            "Unlock the secrets to eternal youth with our miracle product. Act now, limited stock available.",
+            "Make $10,000 a week working from home! No experience required. Just pay for our exclusive starter kit."
         ],
-        "Connections": [
-            2,
-            4,
-            9,
-            13,
-            20,
-            27
-        ]
+        "Connections": [2, 4, 13, 20, 27]
     },
     "4": {
         "Tweets": [
             "Watching a movie tonight.",
-            "Pizza for dinner!"
+            "Pizza for dinner!",
+            "Catching up on my favorite TV series.",
+            "Movie night with friends!",
+            "Cooking up a delicious homemade dinner.",
+            "Congratulations, you've won a free luxury vacation you never entered! Share your credit card details to claim your prize.",
+            "Get rich quick with our Bitcoin doubling scheme. Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            1,
-            3,
-            5,
-            10,
-            14,
-            21,
-            28
-        ]
+        "Connections": [3, 5, 10, 14, 21, 28]
     },
     "5": {
         "Tweets": [
             "Gym time!",
-            "Hiking in the mountains."
+            "Hiking in the mountains.",
+            "Enjoying a workout at the gym.",
+            "Climbing to new heights on the trails.",
+            "Getting fit and staying active.",
+            "Unlock the secrets to eternal youth with our miracle product. Act now, limited stock available.",
+            "Make $10,000 a week working from home! No experience required. Just pay for our exclusive starter kit."
         ],
-        "Connections": [
-            4,
-            6,
-            15,
-            22,
-            29,
-            30
-        ]
+        "Connections": [4, 6, 15, 22, 29, 30]
     },
     "6": {
         "Tweets": [
             "Feeling creative today.",
-            "Cooked a new recipe."
+            "Cooked a new recipe.",
+            "Exploring new art projects.",
+            "Trying my hand at DIY crafts.",
+            "Enjoying some relaxing time in my garden.",
+            "Congratulations, you've been selected for a free luxury vacation! Simply share your credit card details.",
+            "Get rich quick with our Bitcoin doubling scheme. Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            5,
-            7,
-            16,
-            23,
-            31,
-            32,
-            30
-        ]
+        "Connections": [5, 7, 16, 23, 31, 32, 30]
     },
     "7": {
         "Tweets": [
             "Productive day at work.",
-            "Weekend plans are set!"
+            "Weekend plans are set!",
+            "Relaxing with a good book after a long day at work.",
+            "Preparing for an upcoming project at the office.",
+            "Excited for the weekend adventures ahead.",
+            "Unlock the secrets to eternal youth with our miracle product. Act now, limited stock available.",
+            "Make $10,000 a week working from home! No experience required. Just pay for our exclusive starter kit."
         ],
-        "Connections": [
-            1,
-            6,
-            8,
-            17,
-            24,
-            33,
-            34,
-            31,
-            37
-        ]
+        "Connections": [1, 6, 8, 17, 24, 33, 34, 31, 37]
     },
     "8": {
         "Tweets": [
             "Learning a new language.",
-            "Book recommendations, anyone?"
+            "Book recommendations, anyone?",
+            "Exploring different cultures through language learning.",
+            "Reading is my favorite way to unwind.",
+            "A new language opens up new horizons.",
+            "Congratulations, you've won a free luxury vacation you never entered! Share your credit card details to claim your prize.",
+            "Get rich quick with our Bitcoin doubling scheme. Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            2,
-            7,
-            9,
-            18,
-            25,
-            35,
-            36,
-            32,
-            36
-        ]
+        "Connections": [2, 7, 9, 18, 25, 35, 36, 32, 36]
     },
     "9": {
         "Tweets": [
@@ -162,151 +139,110 @@
     "10": {
         "Tweets": [
             "Music concert tonight!",
-            "New album release."
+            "New album release.",
+            "Dancing the night away at a live music event.",
+            "Discovering new music that hits the right notes.",
+            "Enjoying a relaxing evening with some good tunes.",
+            "Congratulations, you've been selected for a free luxury vacation! Simply share your credit card details.",
+            "Get rich quick with our Bitcoin doubling scheme. Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            4,
-            9,
-            20,
-            27,
-            39,
-            40,
-            41,
-            34,
-            39,
-            41
-        ]
+        "Connections": [4, 20, 39, 40, 41, 34, 39, 41]
     },
     "11": {
         "Tweets": [
             "Coding all night.",
-            "Tech gadgets and innovations."
+            "Tech gadgets and innovations.",
+            "Exploring the latest tech trends.",
+            "Coding is my therapy.",
+            "Tech enthusiast always looking for the next big thing.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now!"
         ],
-        "Connections": [
-            2,
-            12,
-            28,
-            42,
-            43,
-            44,
-            44,
-            42,
-            35,
-            27
-        ]
+        "Connections": [2, 12, 28, 42, 43, 44, 44, 42, 35, 27]
     },
     "12": {
         "Tweets": [
             "Late-night cravings.",
-            "Movie recommendations, anyone."
+            "Movie recommendations, anyone.",
+            "Exploring the local food scene.",
+            "Discussing favorite films with friends.",
+            "Trying out new recipes at home.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            1,
-            2,
-            11,
-            13,
-            29,
-            45,
-            46,
-            47,
-            36,
-            16
-        ]
+        "Connections": [2, 11, 13, 29, 45, 46, 47, 36, 16]
     },
     "13": {
         "Tweets": [
             "Sports fan forever.",
-            "Exciting game last night."
+            "Exciting game last night.",
+            "Cheering for the home team!",
+            "Watching a thrilling match with friends.",
+            "Game day excitement!",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
-        "Connections": [
-            3,
-            12,
-            14,
-            30,
-            48,
-            49,
-            49,
-            37
-        ]
+        "Connections": [3, 12, 14, 30, 48, 49, 49, 37]
     },
     "14": {
         "Tweets": [
             "Art and creativity.",
-            "Gallery exhibition this weekend."
+            "Gallery exhibition this weekend.",
+            "Inspired by the beauty of nature in my art.",
+            "Exploring different art forms and techniques.",
+            "Artistic expression is my passion.",
+            "Feeling creative today.",
+            "Cooked a new recipe."
         ],
-        "Connections": [
-            4,
-            13,
-            15,
-            31,
-            32,
-            38,
-            43
-        ]
+        "Connections": [4, 13, 15, 31, 32, 38, 43]
     },
     "15": {
         "Tweets": [
             "Pets are family.",
-            "Adopted a new furry friend."
+            "Adopted a new furry friend.",
+            "Spending quality time with my beloved pets.",
+            "Cherishing the unconditional love of pets.",
+            "Exploring pet-friendly activities in the city.",
+            "Productive day at work.",
+            "Weekend plans are set!"
         ],
-        "Connections": [
-            5,
-            14,
-            16,
-            33,
-            34,
-            32,
-            39,
-            48
-        ]
+        "Connections": [5, 14, 16, 33, 34, 32, 39, 48]
     },
     "16": {
         "Tweets": [
             "Traveling the world!",
-            "Exploring new cultures."
+            "Exploring new cultures.",
+            "Embarking on a new adventure around the globe.",
+            "Connecting with people from different corners of the world.",
+            "Discovering the beauty of diverse cultures.",
+            "Learning a new language.",
+            "Book recommendations, anyone?"
         ],
-        "Connections": [
-            6,
-            15,
-            17,
-            35,
-            36,
-            12,
-            33,
-            40
-        ]
+        "Connections": [6, 15, 17, 35, 36, 12, 33, 40]
     },
     "17": {
         "Tweets": [
             "Gourmet food lover.",
-            "Cooking up a storm."
+            "Cooking up a storm.",
+            "Exploring the world of culinary delights.",
+            "Creating culinary masterpieces in the kitchen.",
+            "Foodie adventures are my favorite journeys.",
+            "Feeling creative today.",
+            "Cooked a new recipe."
         ],
-        "Connections": [
-            7,
-            16,
-            18,
-            37,
-            38,
-            41,
-            34
-        ]
+        "Connections": [7, 16, 18, 37, 38, 41, 34]
     },
     "18": {
         "Tweets": [
             "Nature lover.",
-            "Hiking and camping adventures."
+            "Hiking and camping adventures.",
+            "Connecting with nature through outdoor adventures.",
+            "Camping under the starry night sky.",
+            "Finding serenity in the heart of the wilderness.",
+            "Pets are family.",
+            "Adopted a new furry friend."
         ],
-        "Connections": [
-            8,
-            17,
-            19,
-            39,
-            40,
-            42,
-            41,
-            35,
-            50
-        ]
+        "Connections": [8, 17, 20, 39, 40, 42, 41, 35, 50]
     },
     "19": {
         "Tweets": [
@@ -343,17 +279,15 @@
     "20": {
         "Tweets": [
             "Fashion and style.",
-            "Fashion show this weekend."
-        ],
-        "Connections": [
-            10,
-            19,
-            21,
-            43,
-            44,
-            3,
-            37
+            "Fashion show this weekend.",
+            "Experimenting with new styles and fashion trends.",
+            "Eagerly anticipating the upcoming fashion show.",
+            "Discussing fashion choices with friends.",
+            "Fashion is my creative outlet.",
+            "Nature lover.",
+            "Hiking and camping adventures."
         ]
+        "Connections": [10, 19, 21, 43, 44, 3, 37]
     },
     "21": {
         "Tweets": [
@@ -379,183 +313,148 @@
     "22": {
         "Tweets": [
             "Photography enthusiast.",
-            "Capturing life's moments."
+            "Capturing life's moments.",
+            "Documenting the beauty of everyday life through photos.",
+            "Discovering hidden photographic gems in the city.",
+            "Photography is my way of preserving memories.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Claim your free luxury vacation, but first, share your credit card details with us."
         ],
-        "Connections": [
-            5,
-            21,
-            23,
-            47,
-            48,
-            48,
-            39,
-            46
-        ]
+        "Connections": [5, 21, 23, 47, 48, 48, 39, 46]
     },
     "23": {
         "Tweets": [
             "Fitness journey.",
-            "Healthy lifestyle tips."
+            "Healthy lifestyle tips.",
+            "Dedicated to maintaining a healthy and active lifestyle.",
+            "Sharing tips for staying fit and energetic.",
+            "A journey towards overall well-being.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now."
         ],
-        "Connections": [
-            6,
-            22,
-            24,
-            49,
-            46,
-            47,
-            40
-        ]
+        "Connections": [6, 22, 24, 49, 46, 47, 40]
     },
     "24": {
         "Tweets": [
             "Movie buffs unite.",
-            "Top movie picks of the year."
+            "Top movie picks of the year.",
+            "Exploring the world of cinema and storytelling.",
+            "Engaging in lively discussions about favorite movies.",
+            "Passionate about the magic of the silver screen.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            7,
-            23,
-            25,
-            33,
-            48,
-            41
-        ]
+        "Connections": [7, 23, 25, 33, 48, 41]
     },
     "25": {
         "Tweets": [
             "Environmental activist.",
-            "Climate change matters."
+            "Climate change matters.",
+            "Advocating for a greener and more sustainable planet.",
+            "Discussing the importance of addressing climate change.",
+            "Every small step counts in the fight against environmental issues.",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
-        "Connections": [
-            1,
-            8,
-            24,
-            26,
-            33,
-            42,
-            38,
-            49
-        ]
+        "Connections": [1, 8, 24, 26, 33, 42, 38, 49]
     },
     "26": {
         "Tweets": [
             "Music is life.",
-            "Concerts and playlists."
+            "Concerts and playlists.",
+            "Immersed in the world of music, from live shows to curated playlists.",
+            "Sharing the magic of music with fellow enthusiasts.",
+            "The rhythm of life is set to music.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            2,
-            9,
-            25,
-            27,
-            34,
-            43,
-            34
-        ]
+        "Connections": [2, 27, 34, 43, 34]
     },
     "27": {
-        "Tweets": [
-            "Travel and wanderlust.",
-            "Bucket list destinations.",
-            "Looking for a legitimate work-from-home opportunity? Check out these job listings in your area.",
-            "Earn big with our proven investment strategy – guaranteed returns! Act fast!",
-            "Love your job? Share your success story and inspire others to follow their passions.",
-            "Start a small business from home, no experience required. We'll guide you every step of the way.",
-            "Double your money with our exclusive cryptocurrency trading bot – send us your funds to get started!",
-            "Learn about real estate investment: Avoid common pitfalls and make informed decisions.",
-            "Government job openings: Apply for positions in your field and serve your community.",
-            "Unlock the secrets of personal finance and achieve your financial goals with these expert tips.",
-            "Don't miss out on this limited-time offer! Send us a fee to claim your 'free' luxury vacation.",
-            "Improve your job search skills: Attend our free online workshop for valuable tips and guidance."            
-        ],
-        "Connections": [
-            3,
-            10,
-            26,
-            28,
-            35,
-            44,
-            11,
-            50
-        ]
-    },
+            "Tweets": [
+                "Travel and wanderlust.",
+                "Bucket list destinations.",
+                "Looking for a legitimate work-from-home opportunity? Check out these job listings in your area.",
+                "Earn big with our proven investment strategy – guaranteed returns! Act fast!",
+                "Love your job? Share your success story and inspire others to follow their passions.",
+                "Start a small business from home, no experience required. We'll guide you every step of the way.",
+                "Double your money with our exclusive cryptocurrency trading bot – send us your funds to get started!",
+                "Learn about real estate investment: Avoid common pitfalls and make informed decisions.",
+                "Government job openings: Apply for positions in your field and serve your community.",
+                "Unlock the secrets of personal finance and achieve your financial goals with these expert tips.",
+                "Don't miss out on this limited-time offer! Send us a fee to claim your 'free' luxury vacation.",
+                "Improve your job search skills: Attend our free online workshop for valuable tips and guidance."            
+            ],
+            "Connections": [
+                3,
+                10,
+                26,
+                28,
+                35,
+                44,
+                11,
+                50
+            ]
+        },
     "28": {
         "Tweets": [
             "Gaming community.",
-            "Gaming tips and updates."
+            "Gaming tips and updates.",
+            "A dedicated member of the gaming community.",
+            "Sharing the latest gaming tips and exciting updates.",
+            "Gaming is not just a hobby; it's a way of life.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now."
         ],
-        "Connections": [
-            11,
-            27,
-            29,
-            36,
-            45,
-            45,
-            4,
-            35
-        ]
+        "Connections": [11, 29, 36, 45, 45, 4, 35]
     },
     "29": {
         "Tweets": [
             "Tech and gadgets.",
-            "Latest tech news and reviews."
+            "Latest tech news and reviews.",
+            "A tech enthusiast, always on the lookout for the latest gadgets.",
+            "Sharing insights into the ever-evolving world of technology.",
+            "Exploring the world of innovation and cutting-edge tech.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            12,
-            28,
-            30,
-            37,
-            46,
-            46,
-            38,
-            5
-        ]
+        "Connections": [12, 30, 37, 46, 46, 38, 5]
     },
     "30": {
         "Tweets": [
             "Exploring underwater life.",
-            "Scuba diving adventures."
+            "Scuba diving adventures.",
+            "Diving into the depths of the ocean for incredible underwater experiences.",
+            "Sharing the beauty of the aquatic world through photos and stories.",
+            "Every dive is a new adventure waiting to be discovered.",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
-        "Connections": [
-            6,
-            13,
-            29,
-            31,
-            47,
-            47,
-            48,
-            5
-        ]
+        "Connections": [6, 13, 29, 31, 47, 47, 48, 5]
     },
     "31": {
         "Tweets": [
             "Artistic expressions.",
-            "Painting and sculpture creations."
+            "Painting and sculpture creations.",
+            "Diving into the world of art, from painting to sculpture.",
+            "Sharing the results of creative endeavors with fellow art enthusiasts.",
+            "Every piece of art has a story to tell.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Claim your free luxury vacation, but first, share your credit card details with us."
         ],
-        "Connections": [
-            7,
-            14,
-            30,
-            32,
-            48,
-            48,
-            6
-        ]
+        "Connections": [7, 14, 30, 32, 48, 48, 6]
     },
     "32": {
         "Tweets": [
             "Tech innovation enthusiast.",
-            "Future tech trends."
+            "Future tech trends.",
+            "Exploring the future of technology and innovation.",
+            "Sharing insights into the exciting world of tech trends.",
+            "Innovation is the key to a brighter tomorrow.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now."
         ],
-        "Connections": [
-            8,
-            15,
-            31,
-            33,
-            49,
-            6,
-            33,
-            14
-        ]
+        "Connections": [8, 15, 31, 33, 49, 6, 33, 14]
     },
     "33": {
         "Tweets": [
@@ -586,7 +485,13 @@
     "34": {
         "Tweets": [
             "Wildlife photography.",
-            "Capturing nature's beauty."
+            "Capturing nature's beauty.",
+            "Exploring the world of wildlife through my lens.",
+            "Preserving the majesty of creatures in their natural habitat.",
+            "Every click tells a unique story of the animal kingdom.",
+            "Invest in my wildlife photo collection and bring nature into your home.",
+            "Special offer: Get a free wildlife calendar with your purchase today.",
+            "Join my wildlife photography workshop and learn the art of capturing untamed beauty."
         ],
         "Connections": [
             10,
@@ -594,49 +499,55 @@
             35,
             7,
             26,
-            35,
             15
         ]
     },
     "35": {
         "Tweets": [
             "Culinary delights.",
-            "Foodie adventures."
+            "Foodie adventures.",
+            "Embarking on culinary adventures in search of delicious dishes.",
+            "Sharing the joy of food and exploration with fellow foodies.",
+            "Food is the gateway to discovering new cultures.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            11,
-            18,
-            34,
-            36,
-            27,
-            28,
-            16,
-            8
-        ]
+        "Connections": [11, 18, 34, 36, 27, 28, 16, 8]
     },
     "36": {
         "Tweets": [
-            "Mindfulness and meditation.",
-            "Inner peace journey."
+             "Mindfulness and meditation.",
+            "Inner peace journey.",
+            "Exploring foreign languages.",
+            "Multilingual connections.",
+            "Diving into the world of language learning and cultural exchange.",
+            "Sharing the beauty of different languages and cultures with fellow enthusiasts.",
+            "Language is the bridge that connects the world.",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
-        "Connections": [
-            12,
+        "Connections": [ 12,
             19,
             35,
             37,
             16,
             8,
             36,
-            28
-        ]
+            28]
     },
     "37": {
         "Tweets": [
             "Space exploration enthusiast.",
-            "Astronomy wonders."
+            "Astronomy wonders.",
+            "Music and melodies.",
+            "Jamming with friends.",
+            "Exploring the world of music from playing instruments to singing.",
+            "Sharing the magic of music with fellow enthusiasts.",
+            "Every note carries emotions and stories.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
-        "Connections": [
-            13,
+        "Connections": [13,
             20,
             36,
             38,
@@ -645,12 +556,11 @@
             7,
             17,
             29,
-            39
-        ]
+            39]
     },
     "38": {
         "Tweets": [
-            "Adventure seeker.",
+          "Adventure seeker.",
             "Thrill-seeking experiences.",
             "Double your Bitcoin investment overnight – send us your funds for fast returns!",
             "Unlock the secret to crypto riches with our exclusive trading program.",
@@ -671,10 +581,16 @@
             "Join our crypto trading group for insider tips on market manipulation!",
             "Instant crypto loans with no credit check - just send us a collateral payment!",
             "Crypto trading signals – pay us for guaranteed profits in every trade.",
-            "Crypto lottery! Send us funds for a chance to win a lifetime supply of Bitcoin!"
+            "Crypto lottery! Send us funds for a chance to win a lifetime supply of Bitcoin!",
+            "Fitness and wellness.",
+            "Health and nutrition tips.",
+            "Dedicated to achieving health and wellness goals.",
+            "Sharing tips and insights for a healthy and balanced lifestyle.",
+            "Wellness is a journey, not a destination.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now."
         ],
-        "Connections": [
-            14,
+        "Connections": [ 14,
             21,
             37,
             39,
@@ -684,13 +600,18 @@
             41,
             25,
             9,
-            42
-        ]
+            42]
     },
-    "39": {
+     "39": {
         "Tweets": [
             "Vintage car collector.",
-            "Restoration projects."
+            "Restoration projects.",
+            "I just published a new blog post on healthy eating tips.",
+"Join me for a charity run this weekend to support a local children's hospital.",
+"Let's meet up at the park for a picnic and enjoy the beautiful weather.",
+"I'm excited to announce my art exhibition opening next week at the downtown gallery.",
+"I'm selling my vintage record collection - contact me if you're interested.","Congratulations, you've won a luxury vacation you never entered! Just send us your credit card details to claim your prize.",
+"Make $5,000 a week working from home, no experience required. Just pay for our starter kit."
         ],
         "Connections": [
             15,
@@ -707,11 +628,20 @@
     },
     "40": {
         "Tweets": [
-            "History and archaeology.",
+             "History and archaeology.",
+            "Ancient mysteries.",
+            "Film enthusiasts unite.",
+            "Cinematic adventures await.",
+            "Exploring the world of filmmaking, from watching to creating.",
+            "Engaging in lively discussions about favorite movies.",
+            "Movies are the stories that connect us all.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest.",
+             "History and archaeology.",
             "Ancient mysteries."
         ],
         "Connections": [
-            16,
+             16,
             23,
             39,
             41,
@@ -724,10 +654,17 @@
     "41": {
         "Tweets": [
             "DIY enthusiast.",
-            "Crafting and home projects."
+            "Crafting and home projects.",
+            "Culinary exploration.",
+            "Cooking and baking adventures.",
+            "Delving into the world of culinary delights and food experiments.",
+            "Sharing the joy of culinary creativity with fellow foodies.",
+            "Cooking is an art, and the kitchen is the canvas.",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
         "Connections": [
-            17,
+           17,
             24,
             40,
             42,
@@ -740,11 +677,18 @@
     },
     "42": {
         "Tweets": [
-            "Health and wellness.",
-            "Nutrition and fitness tips."
+           "Health and wellness.",
+            "Nutrition and fitness tips.",
+            "Outdoor adventures.",
+            "Hiking and camping expeditions.",
+            "Embracing the great outdoors through thrilling adventures.",
+            "Sharing the beauty of nature and the excitement of exploration.",
+            "Every journey into the wilderness is a lesson in survival.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit."
         ],
         "Connections": [
-            18,
+          18,
             25,
             41,
             43,
@@ -756,12 +700,19 @@
     },
     "43": {
         "Tweets": [
-            "Fiction and fantasy.",
-            "Imaginative storytelling."
+          "Fiction and fantasy.",
+            "Imaginative storytelling.",
+            "Fashion forward.",
+            "Trendy style and fashion news.",
+            "Immersed in the world of fashion, from the latest trends to personal style.",
+            "Sharing insights and experiences in the fashion industry.",
+            "Fashion is a statement, and style is the language.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
         "Connections": [
-            19,
-            26,
+                  19,
+                  26,
             42,
             44,
             20,
@@ -772,11 +723,18 @@
     },
     "44": {
         "Tweets": [
-            "Motorsport fan.",
-            "Formula 1 and racing updates."
+           "Motorsport fan.",
+            "Formula 1 and racing updates.",
+            "Tech innovations and discoveries.",
+            "Future tech trends and inventions.",
+            "Exploring the forefront of technology and innovation.",
+            "Sharing breakthroughs and insights in the world of tech.",
+            "Innovation is the driving force behind progress.",
+            "Claim your free luxury vacation, but first, share your credit card details with us.",
+            "You owe back taxes, and we're from the IRS! Pay now with gift cards or face arrest."
         ],
         "Connections": [
-            20,
+             20,
             27,
             43,
             45,
@@ -786,11 +744,18 @@
     },
     "45": {
         "Tweets": [
-            "Astrology and horoscopes.",
-            "Celestial predictions."
+          "Astrology and horoscopes.",
+            "Celestial predictions.",
+            "Cinematic journeys.",
+            "Movie nights and premieres.",
+            "Exploring the world of cinema, from classics to the latest releases.",
+            "Engaging in discussions about the art of storytelling through film.",
+            "Movies are the tapestry of our lives.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Discover the secret to eternal youth with our miracle product. Limited stock, act now."
         ],
         "Connections": [
-            21,
+          21,
             28,
             44,
             46,
@@ -800,11 +765,18 @@
     },
     "46": {
         "Tweets": [
-            "Craft beer enthusiast.",
-            "Exploring local breweries."
+           "Craft beer enthusiast.",
+            "Exploring local breweries.",
+            "Culinary creativity.",
+            "Cooking and baking experiments.",
+            "Diving into the world of culinary innovation and food exploration.",
+            "Sharing the joy of culinary artistry with fellow food enthusiasts.",
+            "Every dish has a story to tell, and every meal is an adventure.",
+            "Congratulations, you've won a lottery you never entered! Send us money to claim your prize.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
         "Connections": [
-            22,
+           22,
             29,
             45,
             47,
@@ -816,11 +788,18 @@
     },
     "47": {
         "Tweets": [
-            "Fashion and beauty.",
-            "Makeup and style tips."
+          "Fashion and beauty.",
+            "Makeup and style tips.",
+            "Underwater wonders.",
+            "Scuba diving adventures and marine life exploration.",
+            "Exploring the depths of the ocean and the mysteries of underwater life.",
+            "Sharing the beauty and diversity of marine ecosystems.",
+            "Beneath the surface lies a world waiting to be discovered.",
+            "Make $5,000 a week working from home, no experience required. Just pay for our starter kit.",
+            "Claim your free luxury vacation, but first, share your credit card details with us."
         ],
         "Connections": [
-            23,
+           23,
             30,
             46,
             48,
@@ -831,11 +810,18 @@
     },
     "48": {
         "Tweets": [
-            "Gardening passion.",
-            "Green thumbs unite!"
+              "Gardening passion.",
+            "Green thumbs unite!",
+            "Pet lovers' paradise.",
+            "Adventures with furry friends.",
+            "Celebrating the bond between humans and their beloved pets.",
+            "Sharing stories and moments that make life with pets special.",
+            "Pets bring joy, love, and endless happiness into our lives.",
+            "Meet singles in your area – just share your personal info and credit card details.",
+            "Double your Bitcoin in 24 hours! Send us your cryptocurrency, and we'll double it for you."
         ],
         "Connections": [
-            24,
+           24,
             31,
             47,
             49,
@@ -892,13 +878,21 @@
     },
     "50": {
         "Tweets": [
-            "Movie buffs unite.",
-            "Top movie picks of the year."
+                      "Movie buffs unite.",
+            "Top movie picks of the year.",
+            "Environmental conservationist.",
+            "Sustainability matters.",
+            "Dedicated to preserving the environment and advocating for sustainability.",
+            "Raising awareness about the importance of conservation.",
+            "Protecting the planet is our responsibility for future generations.",
+            "Claim your free luxury vacation, but first, share your credit card details with us."
         ],
-        "Connections": [
-            18,
+        "Connections": [  18,
             27,
-            2
-        ]
+            2]
     }
 }
+
+    
+
+
