@@ -1,2 +1,5 @@
+ no
+ yes
 no
 yes
+nan
