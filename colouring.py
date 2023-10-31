@@ -57,16 +57,12 @@ for node, info in data.items():
     total_tweets = len(tweets)
 
     for tweet in tweets:
-        if is_scam(tweet) == 'Scam':
-            scam_count += 1
-
-        if 'yes' in tweet.lower():
+        if is_scam(tweet) == 'yes':
             yes_count += 1
-        if 'no' in tweet.lower():
-            no_count += 1
+
 
     # Count "yes" based on the difference between total tweets and "no" count
-    yes_count = total_tweets - no_count
+    no_count = total_tweets - yes_count
 
     # Calculate the scam percentage
     scam_percentage = (yes_count / total_tweets) * 100 if total_tweets > 0 else 0
