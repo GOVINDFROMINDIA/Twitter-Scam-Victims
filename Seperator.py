@@ -73,16 +73,19 @@ def main(text):
     link_predictions = [predict_link_type(link) for link in links]
     scam_text_prediction = predict_scam_text(text_without_links)
     
-    # Calculate average predictions
-    avg_link_prediction = sum(link_predictions) / len(link_predictions) if link_predictions else 0
-    avg_scam_text_prediction = scam_text_prediction
+    # Pass predictions to OR_Gate function
+    result = OR_Gate(scam_text_prediction, max(link_predictions, default=0))
     
-    # Calculate overall average
-    overall_avg_prediction = (avg_link_prediction + avg_scam_text_prediction) / 2
-    
-    return overall_avg_prediction
+    return result
+
+# OR Gate Function
+def OR_Gate(x1, y1):
+    if x1 == 1 or y1 == 1:
+        return 1
+    else:
+        return 0
 
 # Example usage
-text = "Get Free bitcoin http://www.garage-pirenne.be/index.php?option="
-avg_prediction = main(text)
-print("Average prediction:", avg_prediction)
+text = "Get Free bitcoin http://google.com"
+output = main(text)
+print("Output:", output)
