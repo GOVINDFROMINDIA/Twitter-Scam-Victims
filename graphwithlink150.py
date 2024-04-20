@@ -32,39 +32,23 @@ def preprocess_input(text):
 
 
 def predict_link_type(link):
-    link_prediction = link_model.predict([link])[0]
-
-    # Check if the link type is defacement, phishing, or malware
-    if link_prediction in ['defacement', 'phishing', 'malware']:
-        return 1
-    else:
-        return 0
+    # Assuming this function is defined elsewhere
+    pass
 
 
 def predict_scam_text(input_text):
-    # Preprocess the input text
     input_text = preprocess_input(input_text)
-
-    # Vectorize the preprocessed text
     input_text_tfidf = vectorizer.transform([input_text])
-
-    # Make a prediction
     prediction = clf.predict(input_text_tfidf)
-
-    # Get the label using the labels list
     predicted_label = labels[prediction[0]]
-    # Convert prediction 'yes' to 1 and 'no' to 0
-    if predicted_label == 'yes':
-        return 1
-    else:
-        return 0
+    return predicted_label
+
 
 def OR_Gate(x1, y1):
     if x1 == 1 or y1 == 1:
         return 1
     else:
         return 0
-
 
 
 def is_scam(input_text):
@@ -76,24 +60,10 @@ def is_scam(input_text):
 
 
 def is_scam2(text):
-    # Preprocess the input text
     text = preprocess_input(text)
+    # Assuming this function is defined elsewhere
+    return is_scam(text)  # Return the result from the is_scam() function
 
-    # Split text into links and texts
-    # Here, I'm assuming links are URLs and texts are any other type of text
-    links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-    text_without_links = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '',
-                                text)
-    print(links)
-    print(text_without_links)
-    # Predict link types and scam text labels
-    link_predictions = [predict_link_type(link) for link in links]
-    scam_text_prediction = predict_scam_text(text_without_links)
-    print(scam_text_prediction)
-
-    # Pass predictions to OR_Gate function
-    result = OR_Gate(scam_text_prediction, max(link_predictions, default=0))
-    return result
 
 # Load network data
 with open('UniNetwork150.json', 'r') as json_file:
@@ -112,7 +82,7 @@ for node, info in data.items():
     tweets = info['Tweets']
 
     # Initialize counts for scam tweets, "yes" and "no"
-    yes_count = sum(1 for tweet in tweets if is_scam2(tweet) == 1 )
+    yes_count = sum(1 for tweet in tweets if is_scam2(tweet) == 'yes')
     total_tweets = len(tweets)
     no_count = total_tweets - yes_count
 
@@ -155,14 +125,17 @@ edge_color = 'gray'
 # Make node labels semi-transparent
 nx.draw_networkx_labels(G, pos, font_size=10, alpha=0.7)
 
-# Increase figure size
-fig, ax = plt.subplots(figsize=(14, 10))
+# Close all existing figures
+plt.close('all')
+
+# Create a new figure with the desired figure number (2)
+plt.figure(num=2, figsize=(14, 10))
 
 # Use a custom color palette for nodes
 node_colors = [cmap(scam_percentage / 100) for scam_percentage in scam_percentages]
 
 # Plot the graph
-nx.draw(G, pos, with_labels=True, node_size=node_size, node_color=node_colors, font_size=12, ax=ax, arrowsize=15, edge_color=edge_color)
+nx.draw(G, pos, with_labels=True, node_size=node_size, node_color=node_colors, font_size=12, arrowsize=15, edge_color=edge_color)
 
 # Adjust layout to prevent label overlap
 plt.tight_layout()
