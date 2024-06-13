@@ -22,21 +22,26 @@ with open('labels.txt', 'r') as labels_file:
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
-
 def preprocess_input(text):
     text = text.lower()
     text = ' '.join([word for word in text.split() if word not in stop_words])
     text = ' '.join([lemmatizer.lemmatize(word) for word in text.split()])
     return text
 
+def predict_scam_text(input_text):
+    # Preprocess the input text
+    input_text = preprocess_input(input_text)
 
-def is_scam(text):
-    text = preprocess_input(text)
-    input_text_tfidf = vectorizer.transform([text])
+    # Vectorize the preprocessed text
+    input_text_tfidf = vectorizer.transform([input_text])
+
+    # Make a prediction
     prediction = clf.predict(input_text_tfidf)
-    predicted_label = labels[prediction[0]]
-    return predicted_label
 
+    # Get the label using the labels list
+    predicted_label = labels[prediction[0]]
+
+    return predicted_label
 
 # Load network data
 with open('UniNetwork150.json', 'r') as json_file:
@@ -49,16 +54,13 @@ G = nx.DiGraph()
 yes_counts = {}
 no_counts = {}
 
-# Initialize a dictionary to store followers of each node
-followers = {}
-
 # Iterate through the data and add nodes and directed edges
 for node, info in data.items():
     connections = info['Followers']
     tweets = info['Tweets']
 
     # Initialize counts for scam tweets, "yes" and "no"
-    yes_count = sum(1 for tweet in tweets if is_scam(tweet) == 'yes')
+    yes_count = sum(1 for tweet in tweets if predict_scam_text(tweet) == 'yes')
     total_tweets = len(tweets)
     no_count = total_tweets - yes_count
 
@@ -69,74 +71,38 @@ for node, info in data.items():
     yes_counts[node] = yes_count
     no_counts[node] = no_count
 
-    # Store followers for each node
-    followers[node] = connections
+    # Add the node to the graph if it belongs to a hidden scam community
+    if scam_percentage > 70:
+        G.add_node(node)
 
-    # Add the node to the graph
-    G.add_node(node)
-
-    # Store the scam percentage as a node attribute
-    G.nodes[node]['scam_percentage'] = scam_percentage
-
-    # Add directed edges to the graph
-    for neighbor in connections:
-        G.add_edge(node, str(neighbor))
+        # Add directed edges to the graph
+        for neighbor in connections:
+            G.add_edge(node, str(neighbor))
 
 # Remove self-loops from the graph
 self_loops = list(nx.nodes_with_selfloops(G))
 G.remove_edges_from(self_loops)
 
-# Extract normal nodes (less than 70% scam rate)
-normal_nodes = [node for node in G.nodes if G.nodes[node]['scam_percentage'] < 70]
+# Find hidden scammer nodes
+hidden_scammer_nodes = set()
+for node in G.nodes:
+    for neighbor in G.successors(node):
+        # Check if the followed node has a scam percentage less than 25%
+        if neighbor in yes_counts:
+            scam_percentage = (yes_counts[neighbor] / (yes_counts[neighbor] + no_counts[neighbor])) * 100 if (yes_counts[neighbor] + no_counts[neighbor]) > 0 else 0
+            if scam_percentage < 25:
+                hidden_scammer_nodes.add(neighbor)
 
-# Initialize a list to store nodes that follow at least one scammer
-valid_normal_nodes = []
+# Print hidden scammer nodes
+print("\nHidden scammer nodes with scam percentage less than 25% that are followed by scam nodes:")
+for node in hidden_scammer_nodes:
+    scam_percentage = (yes_counts[node] / (yes_counts[node] + no_counts[node])) * 100 if (yes_counts[node] + no_counts[node]) > 0 else 0
+    print(f"Node {node}: 'Yes' Count = {yes_counts[node]}, 'No' Count = {no_counts[node]}, Scam Percentage = {scam_percentage:.2f}%")
 
-# Iterate through normal nodes
-for node in normal_nodes:
-    # Check if the node exists in the graph
-    if node not in G.nodes:
-        continue
-
-    # Check how many scammers are followed by the current normal node
-    for follower in followers[node]:
-        # Check if the follower exists in the graph
-        if follower in G.nodes and G.nodes[follower]['scam_percentage'] > 70:
-            # Add the node to the list of valid normal nodes and break the loop
-            valid_normal_nodes.append(node)
-            break
-
-# Create a subgraph containing only valid normal nodes and their edges
-valid_normal_subgraph = G.subgraph(valid_normal_nodes + [node for node in G.nodes if node in valid_normal_nodes])
-
-# Check if the subgraph contains nodes and edges before plotting
-if valid_normal_subgraph.number_of_nodes() == 0 or valid_normal_subgraph.number_of_edges() == 0:
-    print("No nodes or edges to plot.")
-else:
-    # Choose a layout algorithm
-    pos = nx.spring_layout(valid_normal_subgraph, seed=42, k=0.1, iterations=50)
-
-    # Increase node size
-    node_size = 800
-
-    # Make edges less prominent
-    edge_color = 'gray'
-
-    # Make node labels semi-transparent
-    nx.draw_networkx_labels(valid_normal_subgraph, pos, font_size=10, alpha=0.7)
-
-    # Close all existing figures
-    plt.close('all')
-
-    # Create a new figure
-    plt.figure(figsize=(14, 10))
-
-    # Plot the subgraph
-    nx.draw(valid_normal_subgraph, pos, with_labels=True, node_size=node_size, font_size=12, arrowsize=15, edge_color=edge_color)
-
-    # Adjust layout to prevent label overlap
-    plt.tight_layout()
-
-    # Display the plot
-    plt.title('NetworkX Directed Graph with Valid Normal Nodes Following Scammers')
-    plt.show()
+# Plot the graph with hidden scammer nodes highlighted
+pos = nx.spring_layout(G, seed=42, k=0.15, iterations=50)
+plt.figure(figsize=(14, 10))
+nx.draw(G, pos, with_labels=True, node_size=800, font_size=12, arrowsize=15, edge_color='gray')
+nx.draw_networkx_nodes(G, pos, nodelist=hidden_scammer_nodes, node_color='red')
+plt.title('NetworkX Directed Graph of Hidden Scam Communities with Hidden Scammer Nodes Highlighted')
+plt.show()
