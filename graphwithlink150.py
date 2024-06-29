@@ -23,18 +23,15 @@ with open('labels.txt', 'r') as labels_file:
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
-
 def preprocess_input(text):
     text = text.lower()
     text = ' '.join([word for word in text.split() if word not in stop_words])
     text = ' '.join([lemmatizer.lemmatize(word) for word in text.split()])
     return text
 
-
 def predict_link_type(link):
     # Assuming this function is defined elsewhere
     pass
-
 
 def predict_scam_text(input_text):
     input_text = preprocess_input(input_text)
@@ -43,13 +40,11 @@ def predict_scam_text(input_text):
     predicted_label = labels[prediction[0]]
     return predicted_label
 
-
 def OR_Gate(x1, y1):
     if x1 == 1 or y1 == 1:
         return 1
     else:
         return 0
-
 
 def is_scam(input_text):
     input_text = preprocess_input(input_text)
@@ -58,12 +53,10 @@ def is_scam(input_text):
     predicted_label = labels[prediction[0]]
     return predicted_label
 
-
 def is_scam2(text):
     text = preprocess_input(text)
     # Assuming this function is defined elsewhere
     return is_scam(text)  # Return the result from the is_scam() function
-
 
 # Load network data
 with open('UniNetwork150.json', 'r') as json_file:
@@ -99,9 +92,9 @@ for node, info in data.items():
     # Store the scam percentage as a node attribute
     G.nodes[node]['scam_percentage'] = scam_percentage
 
-    # Add directed edges to the graph
-    for neighbor in connections:
-        G.add_edge(node, str(neighbor))
+    # Add directed edges to the graph in reverse direction (from followers to following)
+    for follower in connections:
+        G.add_edge(str(follower), node)
 
 # Remove self-loops from the graph
 self_loops = list(nx.nodes_with_selfloops(G))
