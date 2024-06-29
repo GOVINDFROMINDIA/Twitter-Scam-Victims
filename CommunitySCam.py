@@ -86,9 +86,9 @@ for node, info in data.items():
     if scam_percentage > 70:
         G.add_node(node)
 
-        # Add directed edges to the graph
-        for neighbor in connections:
-            G.add_edge(node, str(neighbor))
+        # Add directed edges to the graph in reverse direction (from followers to following)
+        for follower in connections:
+            G.add_edge(str(follower), node)
 
 # Remove self-loops from the graph
 self_loops = list(nx.nodes_with_selfloops(G))
