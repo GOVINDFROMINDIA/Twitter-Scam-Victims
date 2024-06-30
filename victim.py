@@ -55,6 +55,7 @@ def is_scam(input_text):
 
 def is_scam2(text):
     text = preprocess_input(text)
+    # Assuming this function is defined elsewhere
     return is_scam(text)  # Return the result from the is_scam() function
 
 # Load network data
@@ -99,18 +100,28 @@ for node, info in data.items():
 self_loops = list(nx.nodes_with_selfloops(G))
 G.remove_edges_from(self_loops)
 
-# Filter nodes with scam percentage above 70%
-high_scam_nodes = [node for node, data in G.nodes(data=True) if data['scam_percentage'] > 60]
-H = G.subgraph(high_scam_nodes)
-
-# Extract the scam percentages for nodes in the subgraph
-scam_percentages = [H.nodes[node].get('scam_percentage', 0) for node in H.nodes]
+# Extract the scam percentages for nodes
+scam_percentages = [G.nodes[node].get('scam_percentage', 0) for node in G.nodes]
 
 # Use a colormap that ranges from light blue (low scam percentage) to dark blue (high scam percentage)
 cmap = plt.get_cmap('Blues')
 
-# Choose a different layout algorithm
-pos = nx.spring_layout(H, seed=42, k=0.15, iterations=50)
+# Identify scam nodes and victim nodes
+scam_nodes = [node for node, attr in G.nodes(data=True) if attr['scam_percentage'] > 60]
+victim_nodes = [node for node in G.nodes if len([scam_node for scam_node in scam_nodes if G.has_edge(node, scam_node)]) >= 2]
+
+# Update node colors: blue for scam nodes, orange for victim nodes
+node_colors = []
+for node in G.nodes:
+    if node in scam_nodes:
+        node_colors.append(cmap(G.nodes[node]['scam_percentage'] / 100))
+    elif node in victim_nodes:
+        node_colors.append('orange')
+    else:
+        node_colors.append('lightgray')
+
+# Use a custom layout algorithm
+pos = nx.spring_layout(G, seed=42, k=0.15, iterations=50)
 
 # Increase node size
 node_size = 800
@@ -119,7 +130,7 @@ node_size = 800
 edge_color = 'gray'
 
 # Make node labels semi-transparent
-nx.draw_networkx_labels(H, pos, font_size=10, alpha=0.7)
+nx.draw_networkx_labels(G, pos, font_size=10, alpha=0.7)
 
 # Close all existing figures
 plt.close('all')
@@ -127,21 +138,18 @@ plt.close('all')
 # Create a new figure with the desired figure number (2)
 plt.figure(num=2, figsize=(14, 10))
 
-# Use a custom color palette for nodes
-node_colors = [cmap(scam_percentage / 100) for scam_percentage in scam_percentages]
-
 # Plot the graph
-nx.draw(H, pos, with_labels=True, node_size=node_size, node_color=node_colors, font_size=12, arrowsize=15, edge_color=edge_color)
+nx.draw(G, pos, with_labels=True, node_size=node_size, node_color=node_colors, font_size=12, arrowsize=15, edge_color=edge_color)
 
 # Adjust layout to prevent label overlap
 plt.tight_layout()
 
 # Display the plot
-plt.title('NetworkX Directed Graph with Node Color by Scam Percentage (Above 70%)')
+plt.title('NetworkX Directed Graph with Node Color by Scam Percentage and Victim Nodes Highlighted')
 plt.show()
 
 # Print scam percentages, counts of 'yes', and counts of 'no' for each node
-print("Scam percentages, counts of 'yes', and counts of 'no' for each node above 70%:")
-for node in high_scam_nodes:
-    scam_percentage = H.nodes[node].get('scam_percentage', 0)
+print("Scam percentages, counts of 'yes', and counts of 'no' for each node:")
+for node in G.nodes:
+    scam_percentage = G.nodes[node].get('scam_percentage', 0)
     print(f"Node {node}: Scam Percentage = {scam_percentage:.2f}%, 'Yes' Count = {yes_counts[node]}, 'No' Count = {no_counts[node]}")
